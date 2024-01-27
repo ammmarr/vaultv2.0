@@ -1,0 +1,19 @@
+.buttonAndContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 3% 0;
+  .info {
+    font-size: 10px;
+    font-size: 600;
+    color: rgb(64, 62, 62);
+    color: var(--dark);
+    width: fit-content;
+  }
+}
+@media (max-width: 600px) {
+  .info {
+    font-size: 8px !important;
+  }
+}

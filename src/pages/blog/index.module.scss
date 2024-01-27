@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--grey);
+  flex-direction: column;
+  padding: 20vh 0;
+  .backButtonContainer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 20px 0;
+  }
+  .blog {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin: 0vh 0 10vh 0;
+    padding: 2%;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    h1 {
+      margin: 20px 0;
+      text-align: start;
+      color: var(--red);
+    }
+
+    .content {
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-wrap: wrap;
+      overflow-wrap: break-word !important;
+
+      p {
+        text-wrap: wrap;
+        overflow-wrap: break-word !important;
+        width: 100%;
+        white-space: normal;
+        img {
+          max-width: 1200px !important;
+        }
+      }
+    }
+    .topInfo {
+      font-weight: 500;
+      color: grey;
+      margin: 10px 0;
+      display: block;
+    }
+    .buttonAndContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 3% 0 0 0;
+
+      .info {
+        font-size: 16px !important;
+        font-size: 600;
+        color: rgb(64, 62, 62);
+        color: var(--dark);
+        width: fit-content;
+      }
+    }
+    .blogTimeInfoMargin {
+      margin: 5% 0;
+    }
+  }
+  .moreBlogsContainer {
+    width: 90%;
+    h3 {
+      font-size: 30px;
+      span {
+        font-size: inherit;
+
+        color: var(--green);
+      }
+    }
+  }
+  .infoContainer {
+    span {
+      display: flex;
+      gap: 40px;
+      width: 100%;
+      justify-content: space-between;
+      width: fit-content;
+    }
+  }
+}

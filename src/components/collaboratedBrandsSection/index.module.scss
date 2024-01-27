@@ -1,0 +1,208 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  object-fit: contain;
+  position: relative;
+  .arrowContainerR {
+    position: absolute;
+    right: 2%;
+    bottom: 50%;
+    transform: translateY(-100%);
+  }
+  .arrowContainerL {
+    position: absolute;
+    left: 2%;
+    bottom: 50%;
+    transform: translateY(-100%);
+  }
+  .howItWorksContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50vh;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .howItWorksWrapper {
+      width: 95%;
+      z-index: 2;
+      border-radius: 10px 10px 60px 10px;
+      transform: translateY(-50%);
+      text-align: center;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: 5% 3% 3% 3%;
+      gap: 10%;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      .slider {
+        position: relative;
+        flex: 1;
+        // width: 40vw;
+        height: 40vh;
+
+        h3 {
+          width: 100%;
+          height: 100%;
+        }
+
+        .testt {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 40vh !important;
+          .slick-slide {
+            overflow: hidden;
+          }
+          .imgContainer {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            height: 40vh;
+            object-fit: cover;
+
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .sliderItem {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .textSection {
+        flex: 1;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        z-index: 1;
+        h1 {
+          color: var(--green);
+          font-size: 80px;
+          text-align: start;
+          white-space: nowrap;
+          width: 100%;
+          margin: 0 0 10px 0;
+        }
+        p {
+          color: #677c93;
+          font-size: 25px;
+          text-align: start;
+        }
+      }
+    }
+  }
+  .buttonContainer {
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    font-size: 70px;
+    width: 100%;
+    word-spacing: -10px;
+    color: var(--dark);
+    margin-top: 10vh;
+  }
+  .mainTextSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5%;
+    z-index: 1;
+    background: linear-gradient(225deg, #817d7e, var(--white));
+
+    h1 {
+    }
+    .collaboratedBrandSlider {
+      width: 100%;
+      height: fit-content;
+      margin: 2vh 0 2vh 0;
+      border-radius: 10px;
+      .sliderItemContainer {
+        width: 200px;
+        height: 30vh;
+        display: flex !important;
+
+        padding: 10% !important;
+        overflow: hidden;
+
+        .padding {
+          justify-content: center !important;
+          display: flex;
+          align-items: center !important;
+          border-radius: 10px;
+
+          img {
+            width: 70%;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .howItWorksWrapper {
+    flex-direction: column !important;
+    transform: translateY(-30%) !important;
+    align-items: center !important;
+    gap: 40px !important;
+    p {
+      font-size: 15px !important;
+    }
+    .textSection {
+      h1 {
+        font-size: 50px !important;
+        text-align: center !important;
+      }
+      p {
+        font-size: 20px !important;
+        text-align: center;
+      }
+    }
+  }
+
+  .mainTextSection {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  .buttonContainer {
+    justify-content: center;
+  }
+  .slider {
+    width: 90% !important;
+    height: 20vh !important;
+  }
+  .testt {
+    position: static !important;
+  }
+}
+@media (max-width: 630px) {
+  .sliderItemContainer {
+    height: fit-content !important;
+  }
+}

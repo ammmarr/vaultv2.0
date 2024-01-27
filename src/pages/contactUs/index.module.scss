@@ -1,0 +1,132 @@
+.container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--grey);
+  h1 {
+    text-align: center;
+    margin: 15vh 0 5vh 0;
+    font-size: 30px;
+  }
+  .contrastingColor {
+    color: var(--green);
+    font-size: 30px !important;
+  }
+  .errorMessage {
+    color: red;
+    font-size: 10px;
+  }
+  .formAndMapsWrapper {
+    display: flex;
+    width: 40%;
+    gap: 10%;
+    height: fit-content;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: var(--white);
+    border-radius: 10px;
+    margin: 0 0 10% 0;
+    .form {
+      flex: 1;
+      .formRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        margin: 20px 0;
+        width: 100%;
+        .inputContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 100%;
+          flex: 1;
+
+          input {
+            border: none;
+            padding: 7px 0;
+            font-size: 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            outline: none;
+            background-color: transparent;
+            color: black;
+
+            &::placeholder {
+              font-size: 10px;
+            }
+          }
+        }
+        label {
+          font-weight: 600;
+          color: black;
+        }
+      }
+      .textAreaWrapper {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        label {
+          font-weight: 600;
+          color: black;
+        }
+        textarea {
+          width: 100% !important;
+          border: none;
+          height: 100%;
+          padding: 7px 0;
+          font-size: 1rem;
+          border-bottom: 1px solid black;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+          background: transparent;
+          outline: none;
+          height: 100%;
+          flex-grow: 1;
+          min-height: 20vh;
+          color: black;
+
+          &::placeholder {
+            font-size: 10px;
+          }
+        }
+      }
+      .buttonContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        button {
+          font-size: 20px;
+        }
+      }
+    }
+    .mapsWrapper {
+      flex: 1;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .formAndMapsWrapper {
+    width: 95% !important;
+  }
+  .form {
+    width: 100% !important;
+  }
+  .mapsWrapper {
+    display: none;
+  }
+}

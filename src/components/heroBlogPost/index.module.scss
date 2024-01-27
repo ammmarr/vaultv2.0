@@ -1,0 +1,102 @@
+.container {
+  width: 80%;
+  min-height: 60vh;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.3s ease;
+  margin: 2vh  0 0vh 0;
+  max-width: 1500px;
+  background-color: var(--white);
+  cursor: pointer;
+  .imageContainer {
+    flex: 1.1;
+    object-fit: cover;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100% !important;
+      transition: all 0.3s ease;
+    }
+  }
+  .textSection {
+    flex: 1;
+    width: 50%;
+    padding: 50px;
+    .h3 {
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .h1 {
+      font-weight: 600;
+      margin: 20px 0;
+      text-align: start;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h4 {
+      margin-bottom: 20px;
+      color: var(--red);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    p {
+      margin: 0 0 10% 0 !important;
+      width: fit-content;
+      width: 100%;
+      // // word-break: break-word;
+      // text-wrap: balance;
+      // word-wrap: break-word;
+      overflow-wrap: break-word;
+      // white-space: pre-wrap !important;
+      // white-space: pre-line !important;
+    }
+    span {
+      font-size: 16px;
+      font-size: 600;
+      color: rgb(64, 62, 62);
+      color: var(--dark);
+      width: fit-content;
+    }
+    .buttonAndContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 3% 0 0 0;
+    }
+    .groupAndBack {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    .imageContainer {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .bloggerCardContainer {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+  .textSection {
+    padding: 5% !important;
+    width: 100% !important;
+  }
+  .imageContainer {
+    height: 40vh !important;
+  }
+}

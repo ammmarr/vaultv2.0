@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  color: var(--grey);
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(to top, var(--dark), transparent);
+  }
+  .imgContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation-name: zoom;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+    }
+  }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    z-index: 3;
+    text-transform: uppercase;
+    margin-left: 10%;
+    h1 {
+      font-size: 80px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+      width: fit-content;
+      text-align: start;
+    }
+    h2 {
+      text-transform: capitalize;
+    }
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      margin-top: 30px;
+    }
+    .buttonContainer {
+      width: 100%;
+      margin: 30px 0;
+    }
+  }
+}
+@keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    h1 {
+      font-size: 50px !important;
+    }
+  }
+}

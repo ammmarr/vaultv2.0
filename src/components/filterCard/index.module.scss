@@ -1,0 +1,68 @@
+.container {
+  width: fit-content;
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 0 10px;
+  z-index: 20;
+  border: 1px solid var(--dark);
+  background-color: var(--grey);
+
+  border-radius: 10px;
+  position: relative;
+  background-color: white;
+
+  .filterAndArrowContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+  h4 {
+    font-weight: 600;
+  }
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+
+    input {
+      width: fit-content;
+      cursor: pointer;
+    }
+  }
+  .checkboxCollection {
+    overflow: hidden;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 200px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    transform: translateY(110%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: 1px solid var(--greenish);
+    background-color: white;
+  }
+}
+.open {
+  width: 30% !important;
+  position: absolute;
+  transform: translateY(100%);
+  .iconContainer {
+    justify-content: end;
+  }
+}
+.closed {
+  width: fit-content;
+}

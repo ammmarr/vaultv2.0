@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root,
+html,
+body,
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  color: inherit;
+}
+
+:root {
+  --dark: black;
+  --red: #f22432;
+  --grey: #e1dbdd;
+  --white: #fafafa;
+  --greenish: #748c8c;
+  --darkGreen: #2f3b3b;
+}
+body {
+  background: var(--dark);
+}
+.root {
+  width: 100vw;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+.gradientContainer {
+  padding: 15vh 0;
+
+  background: linear-gradient(90deg, var(--dark), var(--darkGreen));
+}
+
+/* Main Colors variables */
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--beige);
+}
+h1 {
+  text-align: center;
+}
+.iconLight {
+  background-color: var(--grey);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+  font-size: 3rem !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  path {
+    transition: all 0.3s ease !important;
+    color: black;
+  }
+  &:hover {
+    path {
+      color: var(--white);
+    }
+    background-color: var(--dark);
+  }
+}
+.iconDark {
+  background-color: var(--dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+  font-size: 3rem !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  path {
+    transition: all 0.3s ease !important;
+
+    color: var(--grey);
+  }
+  &:hover {
+    path {
+      color: var(--dark);
+    }
+    background-color: var(--white);
+  }
+}
+.button {
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 16px;
+  min-width: 100px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  white-space: nowrap;
+  z-index: 2;
+  outline: none;
+  background-color: var(--grey);
+  color: black;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  &:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    box-shadow: rgba(100, 100, 111, 0.702) 0px 7px 29px 0px;
+    color: var(--grey);
+  }
+}
+.buttonLightNoHover {
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 16px;
+  min-width: 100px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  white-space: nowrap;
+  z-index: 2;
+  outline: none;
+  background-color: var(--grey);
+  color: black;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.buttonDark {
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 16px;
+  min-width: 100px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  white-space: nowrap;
+  background-color: rgb(0, 0, 0);
+  color: var(--grey);
+  z-index: 2;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  &:hover {
+    background-color: var(--grey);
+    color: black;
+    transform: scale(1.1);
+    box-shadow: rgba(100, 100, 111, 0.702) 0px 7px 29px 0px;
+  }
+}
+.buttonDarkNoHover {
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 16px;
+  min-width: 100px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  white-space: nowrap;
+  background-color: rgb(0, 0, 0);
+  color: var(--grey);
+  z-index: 2;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.allCaughtUp {
+  width: 100%;
+  text-align: center;
+}
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1px solid rgb(43, 41, 41);
+  border-radius: 0.15em;
+  padding: 5px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type="checkbox"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--greenish);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+input[type="checkbox"]::before {
+  /* ...existing styles */
+
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+@media (max-width: 1000px) {
+  .button {
+    font-size: 10px !important;
+  }
+}

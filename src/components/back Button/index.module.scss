@@ -1,0 +1,22 @@
+.back {
+  color: var(--dark);
+  font-size: 20px;
+  width: fit-content;
+  height: fit-content;
+  font-weight: 500;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 10px;
+  align-items: center;
+
+  svg {
+    transition: all 0.2s ease-out;
+  }
+  &:hover {
+    svg {
+      transform: translateX(-20%);
+    }
+  }
+}

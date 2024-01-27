@@ -1,0 +1,19 @@
+.moreProducts {
+  width: 80%;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  h3 {
+    font-size: 30px;
+    span {
+      color: var(--green);
+    }
+  }
+  .buttonContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

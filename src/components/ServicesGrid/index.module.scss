@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  height: fit-content;
+  padding: 20vh 0;
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    padding: 0 2%;
+    height: fit-content;
+  }
+}
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column !important;
+  }
+}

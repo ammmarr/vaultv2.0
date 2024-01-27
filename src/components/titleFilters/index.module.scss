@@ -1,0 +1,12 @@
+.titleFilter {
+  font-weight: 400;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 30px;
+  span {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

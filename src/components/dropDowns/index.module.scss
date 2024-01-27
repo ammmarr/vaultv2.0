@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  padding-top: 13.5vh;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  gap: 1vh;
+  padding-bottom: 5vh;
+  align-items: center;
+}
+.mainCategoryFilters {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+.subCategoryFilters {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+.subFiltersContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 1%;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  transition-delay: 0.1s overflow;
+}
+
+@media (max-width: 1060px) {
+  .container {
+    padding: 0 0 !important;
+  }
+  .mobButton {
+    font-size: 8px !important;
+    gap: 2%;
+  }
+  .subFiltersContainer {
+    margin-left: 10%;
+    justify-content: start !important;
+  }
+  .mainCategoryFilters {
+    margin-left: 5%;
+
+    justify-content: start !important;
+  }
+}
