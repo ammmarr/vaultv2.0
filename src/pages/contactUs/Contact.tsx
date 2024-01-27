@@ -9,14 +9,15 @@ import Navbar from "../../components/navbar/NavBar";
 const Contact = () => {
   const handleSubmit = async (data: any) => {
     try {
-      const postUrl = `https://tazzweed.com/api/method/tazzweed.api.contact`;
+      const postUrl = `https://vault.jirlie.com/api/method/vault.api.contact`;
       await fetch(postUrl, {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
-      });
+      }).then(res=> console.log(res,"ssssssssssss"));
+
     } catch (er) {
       console.log(er, "axios er");
     }
@@ -44,7 +45,6 @@ const Contact = () => {
       phoneNumber: yup.string(),
     }),
   });
-
   return (
     <>
       <Navbar theme="dark" />
@@ -159,7 +159,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <div className={style.buttonContainer}>
-              <button className="buttonDark"> Submit</button>
+              <button className="buttonDark" onClick={formik.handleSubmit} type="submit"> Submit</button>
             </div>
           </form>
           {/* <div className={style.mapsWrapper}>

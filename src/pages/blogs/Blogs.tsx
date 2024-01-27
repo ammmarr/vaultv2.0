@@ -22,7 +22,7 @@ const Blogs = () => {
   }
   const formattedFilters = filters   ? formatString(filters) :  false
   console.log(formattedFilters,"form")
-  return (
+  return ( 
     <>
       <Navbar theme="dark" />
       <div className={style.container}>
