@@ -1,0 +1,24 @@
+.vacancyCard{
+    background-color: var(--grey);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    color: black;
+    h2{
+        font-size: 2rem;
+    }
+    span{
+        width: 100%;
+        text-align: end;
+        font-size: 0.8rem;
+        color: var(--greenish);
+    }
+    .buttonContainer{
+        width: 100%;
+        text-align: end;
+        display: flex;
+        justify-content: end;
+    }
+}

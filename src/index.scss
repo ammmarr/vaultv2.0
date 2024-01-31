@@ -37,6 +37,14 @@ body {
   object-fit: contain;
   background-size: cover;
   background-position: center;
+  background-color: var(--white);
+  padding-top: 20vh;
+}
+.wrapper{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .gradientContainer {
   padding: 15vh 0;

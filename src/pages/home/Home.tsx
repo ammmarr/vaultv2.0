@@ -8,17 +8,17 @@ import YouMightLikeSection from "../../components/youMightLikeSetion/YouMightLik
 import heroSectionCardsData from "../../data/heroSectionData";
 import transition from "../../utils/transitions/pageTransitions/PageTransitions";
 const Home = () => {
-  return (
-    <>
-      <Navbar />
-      <HeroCard data={heroSectionCardsData} />
-      <YouMightLikeSection />
-      <QuoteSection />
-      <ImagesAndText />
-      <ColloaboratedBrandsSection />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+			<HeroCard data={heroSectionCardsData} />
+			<YouMightLikeSection />
+			<QuoteSection />
+			<ImagesAndText />
+			<ColloaboratedBrandsSection />
+			<Footer />
+		</>
+	);
 };
 
 export default transition(Home);

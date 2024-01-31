@@ -6,14 +6,14 @@ import Navbar from "../../components/navbar/NavBar";
 import heroSectionCardsData from "../../data/heroSectionData";
 import { servicesBackgroundImages } from "../../data/servicesData";
 const Services = () => {
-  return (
-    <>
-      <Navbar />
-      <HeroSectionCentered data={servicesBackgroundImages} />
-      <ServicesGrid />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+			<HeroSectionCentered data={servicesBackgroundImages} direction="y" />
+			<ServicesGrid />
+			<Footer />
+		</>
+	);
 };
 
 export default Services;

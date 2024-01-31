@@ -6,4 +6,9 @@
   align-items: center;
   background-color: #fafafa;
   flex-direction: column;
+  padding-top: 20vh;
+  .wrapper{
+    width: fit-content;
+    outline:1px solid red;
+  }
 }

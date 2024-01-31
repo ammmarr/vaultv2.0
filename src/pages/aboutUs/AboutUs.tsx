@@ -10,21 +10,21 @@ import img3 from "../../assets/sliderImg3.jpg";
 import bg from "../../assets/backgroundImages/front view.jfif";
 
 const heroSectionCardsData = [
-  {
-    bg,
-    h1: " WELCOME TO VAULT",
-    h2: "Your premier distributor of luxury automotive brands in Egypt!",
-  },
+	{
+		bg,
+		h1: " WELCOME TO VAULT",
+		h2: "Your premier distributor of luxury automotive brands in Egypt!",
+	},
 ];
 const AboutUs = () => {
-  return (
-    <>
-      <Navbar />
-      <HeroSectionCentered data={heroSectionCardsData} />
-      <ImagesAndText />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+			<HeroSectionCentered data={heroSectionCardsData} direction="y" />
+			<ImagesAndText />
+			<Footer />
+		</>
+	);
 };
 
 export default AboutUs;
