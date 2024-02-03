@@ -27,7 +27,6 @@ const Navbar: React.FC<Navbar> = ({ theme = "light" }) => {
 	const [currentclikedNavbarItem, setCurrentCurrentClickedNavbarItem] =
 		useState<number | null>(null);
 	const location = useLocation();
-	console.log(location.pathname);
 	const navigate = useNavigate();
 	const controlNavbar = () => {
 		if (typeof window !== "undefined") {
@@ -111,7 +110,6 @@ const Navbar: React.FC<Navbar> = ({ theme = "light" }) => {
 		}
 		return "button";
 	};
-	console.log(location.pathname.includes("blog"), "SSSSSSSSSSSSSSSSSSS");
 	return (
 		<>
 			<SearchModal

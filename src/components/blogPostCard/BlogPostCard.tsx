@@ -10,7 +10,6 @@ const BlogPostCard: FC<any> = ({ data }) => {
 		e.stopPropagation();
 		navigate(`/article/${data.name}`);
 	};
-	console.log(data);
 	return (
 		<div className={style.container} onClick={(e) => handleContainerClick(e)}>
 			{data.meta_image && (

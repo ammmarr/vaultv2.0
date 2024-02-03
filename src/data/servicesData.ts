@@ -13,6 +13,7 @@ const servicesData = [
 		title: "STP Insulation",
 		desc: "We have all the required materials to isolate noise, heat, water & vibrations for all the applications required in Automotive and all vehicles range additional to the constructional applications for water, gas, AC..etc. pipes and the building materials that can isolate the locations also the industrial applications to isolate the tanks and the petrochemical industries.",
 		img: insulation,
+		target: "/products/custom_parent_group=Automotive",
 	},
 	{
 		title: "ACV",

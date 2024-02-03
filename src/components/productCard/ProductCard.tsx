@@ -19,7 +19,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
 	const navigate = useNavigate();
 	const params = useParams();
 	const filters = params.filters;
-	console.log(filters);
 	return (
 		<>
 			<div

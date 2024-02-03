@@ -20,6 +20,7 @@ import ProductsNavbarDropDown from "./components/dropDowns/ProductsNavbarDropDow
 import Cart from "./pages/cart/Cart";
 import React from "react";
 import Careers from "./pages/careers/Careers";
+import Job from "./pages/Job/Job";
 
 export interface Route {
 	name: string;
@@ -74,6 +75,11 @@ export const allRoutes = [
 		name: "Careers",
 		href: "/careers",
 		element: <Careers />,
+	},
+	{
+		name: "Job",
+		href: "/job",
+		element: <Job />,
 	},
 	{
 		name: "Products",
